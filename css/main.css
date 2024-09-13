@@ -1,0 +1,359 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* FOOTER BOOTSTRAP */
+
+.position-absolute-custom {
+    position: absolute;
+    top: 92%;
+    right: 10px;
+  }
+
+/* ADAPATACION MOVIL FOOTER BOOTSTRAP */
+
+@media screen and (max-width:600px){
+    .position-absolute-custom {
+        position: absolute;
+        top: 92%;
+        right: 35px;
+      }
+}
+
+/* FONDO DE PANTALLA */
+
+body{
+    background-color: rgb(32, 31, 31);
+}
+
+/* FONDO DE PANTALLA INDEX */
+
+.fondo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+/* HEADER INDEX */
+
+.headerindex {
+    
+    display: block;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 5%;
+}
+
+header div h1{
+
+    padding-bottom: 2%;
+    font-weight: 900;
+}
+
+header div h2{
+
+    font-weight: 900;
+}
+
+/* MAIN INDEX */
+
+main nav .mainindex{
+
+
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 100%;
+    margin-top: 100px;
+
+}
+
+main nav .mainindex li{
+
+    border: 50px solid black;
+    font-size: 20px;
+    border-radius: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+/* ADAPATACION MOVEIL INDEX */
+
+@media screen and (max-width:1280px){
+    main nav .mainindex{
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+        padding-right: 5%;
+        padding: 5%;
+    }
+    main nav .mainindex li{
+        border: 20px solid black;
+    }
+}
+
+
+/* HEADER PERFIL */
+
+.nomain nav ul{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: 100%;
+    background-color: black;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.nomain nav ul li{
+    font-size: 1.3rem;
+    text-align: center;
+    color: whitesmoke;
+}
+
+/* MAIN PERFIL */
+
+.cajaperfil{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+
+}
+
+.caja{
+    padding: 5%;
+
+}
+
+.caja ul{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(5, 22%);
+
+}
+
+.caja ul li{
+    font-size: 1.5rem;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+
+.fotoperfil {
+    text-align: center;
+    padding: 5%;
+}
+
+.fotoperfil img{
+    width: 40%;
+}
+
+
+/* FOOTER PERFIL */
+
+section .perfilp{
+    border: 5px solid #023d02;
+    margin: 0px 20px;
+    font-size: 2.5rem;
+    color: black;
+    background-color: whitesmoke;
+}
+
+/* ADAPATACION MOVIL PERFIL */
+
+@media screen and (max-width:600px){
+    .fotoperfil img{
+        display: none;
+    }
+    .cajaperfil{
+        grid-template-columns: 100% 0%;
+    }
+    section .perfilp{
+        font-size: 1.1rem;
+    }
+    .caja ul li{
+        font-size: 1rem;
+    }
+    .nomain nav ul li{
+        font-size: 0.8rem;
+    }
+}
+
+/* MAIN ESTUDIOS */
+
+.uadefoto{
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    top: 20px;
+    z-index: -1;
+}
+
+.uadefoto img{
+
+    width: 63%;
+
+}
+
+.estudios{
+
+    display: grid;
+    background-color: rgb(212, 212, 212);
+    border: 5px solid #023d02;
+    grid-template-areas: 
+    "uno uno "
+    "dos tres"
+    "cuatro cinco"
+    "seis siete"
+    ;
+}
+
+.unoestudio{grid-area: uno;}
+.dosestudio{grid-area: dos;}
+.tresestudio{grid-area: tres;}
+.cuatroestudio{grid-area: cuatro;}
+.cincoestudio{grid-area: cinco;}
+.seisestudio{grid-area: seis;}
+.sieteestudio{grid-area: siete;}
+
+
+ main .estudios{
+    position: absolute;
+    height: 53%;
+    width: 85%;
+    left: 10%;
+    top: 40%;
+}
+
+main .estudios h1{
+    font-size: 2rem;
+}
+
+main .estudios h2,h3,h4{
+    font-size: 2.5rem;
+    font-weight: 900;
+
+}
+
+main .estudios p{
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+
+/* ADAPATACION MOVIL ESTUDIOS */
+
+@media screen and (max-width:600px){
+    main .estudios h1{
+        font-size: 2rem;
+    }
+    main .estudios h2,h3,h4{
+        font-size: 1.4rem;
+    }
+    main .estudios p{
+        font-size: 1rem;
+    }
+}
+
+/* MAIN EXPERIENCIA */
+
+.uadefotodos{
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    top: 20px;
+    z-index: -1;
+}
+
+.uadefotodos img{
+
+    width: 55%;
+
+}
+
+main .experienciap{
+    background-color: rgb(212, 212, 212);
+    border: 5px solid #023d02;
+    position: absolute;
+    height: 53%;
+    width: 85%;
+    left: 10%;
+    top: 40%;
+
+}
+
+
+main .experienciap p{
+    font-size: 2em;
+    font-weight: 900;
+}
+
+/* ADAPTACION MOVIL EXPERIENCIA */
+
+@media screen and (max-width:600px){
+    main .experienciap p{
+        font-size: 1.1rem;
+    }
+}
+
+/* MAIN CONTACTO */
+
+.comunicate{
+    text-align: center;
+    color: whitesmoke;   
+}
+
+.iconoscontacto {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 100%;
+    place-items: center;    
+}
+
+.iconoscontacto div img{
+    width: 120%;
+    margin-top: 30px;
+
+}
+
+/* SECTION CONTACTO */
+
+section .mensaje{
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 20px;
+}
+
+section .escribir{
+    text-align: center;
+}
+
+.enviar{
+    text-align: center;
+}
+
+/* ADAPATACION MOVIL CONCTACO */
+
+@media screen and (max-width:600px){
+
+    .iconoscontacto div img{
+        width: 80%;
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+    section .escribir textarea{
+        width: 80%;
+        height: 250px;
+    }
+}
